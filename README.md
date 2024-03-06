@@ -1,9 +1,12 @@
 # HTTPeeper - HTTP Requester Tester
-Take a peep 
-This Python script is designed to perform HTTP requests GET, POST, PUT, DELETE, PATCH, and OPTIONS to a specified URL. 
+
+Created to be able to quickly test http request. The script supports `GET`, `POST`,`PUT`,`DELETE`,`PATCH`, and `OPTIONS`
+
 
 ## Installation
-Before running this script, ensure Python is installed on your system. This script is compatible with Python 3.x versions. You will also need the requests library.
+Before running this script, ensure Python3 is installed on your system. This script is compatible with Python 3.x versions. 
+
+You will also need the `requests` library.
 
 Clone the repository or download the script to your local machine.
 ```markdown
@@ -34,17 +37,26 @@ Enter the URL you wish to test when prompted. Ensure you have authorization to i
 Select the HTTP method you want to use for the request. The script supports GET, POST, PUT, DELETE, PATCH, and OPTIONS methods.
 
 ```
+Response Display: 
 
+The script outputs the response's status code, headers, and body to help users analyze the application's behavior.
 
 After selecting the HTTP method and entering the URL, the script will perform the selected HTTP request to the given URL and print the status code, response headers, and the first 500 characters of the response body directly in the terminal.
 
+Create an alias to quickly use httpeeper 
+```bash
+nano ~/.bashrc
+```
+by adding the following line to your .bashrc or .zshrc file
+
+```bash
+alias httpeeper='python3 /path/to/httpeeper/httpeeper.py'
+```
 ## Features
 
 Support for Multiple HTTP Methods: This script allows users to test how a web application responds to different types of HTTP requests.
 Custom Headers and Data: The script includes an example of sending requests with JSON data and custom headers, demonstrating how to test APIs or web applications that require such inputs.
-Response Display: 
 
-The script outputs the response's status code, headers, and body to help users analyze the application's behavior.
 ## Legal Disclaimer
 
 
