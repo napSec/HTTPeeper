@@ -1,7 +1,7 @@
 import argparse
 import requests
 import json
-import pyYAML
+import yaml
 
 def main():
     # Set up argument parser
