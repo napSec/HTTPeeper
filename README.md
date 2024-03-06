@@ -59,6 +59,10 @@ Select the HTTP method you want to use for the request. The script supports GET,
 
 
 
+https://github.com/napSec/HTTPeeper/assets/113065386/51e44114-3554-4782-b5cf-f5876de13895
+
+
+
 
 
 After selecting the HTTP method and entering the URL, the script will perform the selected HTTP request to the given URL and print the status code, response headers, and the first 500 characters of the response body directly in the terminal.
