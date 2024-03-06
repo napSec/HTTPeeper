@@ -16,8 +16,10 @@ git clone https://github.com/napSec/HTTPeeper
 Install the Dependencies :
 
 ``` python3
-'pip install requests'
-
+pip install requests
+```
+```python3
+pip install requests PyYAML
 ```
 ## Usage
 To use the script, follow these steps:
@@ -30,16 +32,32 @@ Run the script from your terminal or command prompt.
 python3 httpeeper.py
 
 ```
+Usage:
+To use this script, you'll run it from the command line, providing the URL as an argument, and optionally specifying -yaml if you want the output in YAML format. Here's how you might call it:
 
+```python3
+python httpeeper.py http://example.com
+```
+Response Display: 
+
+The script outputs the response's status code, headers, and body to help users analyze the application's behavior.
+
+Response output default json if no options are set. 
+
+To use yaml use option: `-yaml`
+
+```python3
+
+python3 httpeeper.py http://example.com -yaml
+```
 Enter the URL you wish to test when prompted. Ensure you have authorization to interact with this URL.
 
 ```javascript
 Select the HTTP method you want to use for the request. The script supports GET, POST, PUT, DELETE, PATCH, and OPTIONS methods.
 
 ```
-Response Display: 
 
-The script outputs the response's status code, headers, and body to help users analyze the application's behavior.
+
 
 After selecting the HTTP method and entering the URL, the script will perform the selected HTTP request to the given URL and print the status code, response headers, and the first 500 characters of the response body directly in the terminal.
 
