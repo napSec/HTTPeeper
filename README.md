@@ -58,8 +58,6 @@ Select the HTTP method you want to use for the request. The script supports GET,
 ```
 
 
-https://github.com/napSec/HTTPeeper/assets/113065386/fea7ff96-09be-4e3f-b08b-21ff3b5118e9
-
 
 
 
